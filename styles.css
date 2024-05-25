@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h3, h4, h5 {
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.slot {
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    min-height: 20px;
+    user-select: none;
+}
+
+.slot[draggable="true"] {
+    cursor: move;
+}
+
+.item {
+    background: #3e5387;
+    color: #fff;
+}
+
+#complete-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    min-width: 120px;
+}
+
+#progress-bar {
+    background-color: rgb(55, 65, 81);
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progress {
+    background-color: rgb(234, 179, 8);
+    height: 100%;
+}
